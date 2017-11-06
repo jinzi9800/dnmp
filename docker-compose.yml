@@ -2,7 +2,8 @@ nginx:
   image: nginx:lastest
   ports:
     - "80:80"
- #   - "443:443"
+ #这个是https的访问端口
+ #- "443:443"
   volumes:
     - ./www/:/var/www/html/:rw
     - ./conf/nginx/conf.d:/etc/nginx/conf.d/:ro
